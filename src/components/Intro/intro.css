@@ -1,0 +1,123 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.bg {
+    object-fit: cover;
+    height: 80vh;
+    width: auto;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.introContent {
+    flex: 1;
+    padding: 2rem 2rem 2rem 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.hello {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #22223b; /* Unified text color */
+    margin-bottom: 0.5rem;
+}
+
+.introText {
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #22223b; /* Unified text color */
+}
+
+.introName {
+    color: #22223b; /* Unified text color */
+    font-weight: 800;
+}
+
+.introRole {
+    color: #22223b; /* Unified text color */
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.introParaWrapper {
+    width: 100%;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.introPara {
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #22223b; /* Unified text color */
+    line-height: 1.7;
+    max-width: 38rem;
+}
+
+.introImageWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    #intro {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1.5rem;
+        height: auto;
+        padding-top: 2rem;
+    }
+    .introContent {
+        padding: 2rem;
+        font-size: 2rem;
+        align-items: flex-start;
+    }
+    .bg {
+        height: 50vw;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        padding: 0 0.5rem;
+    }
+    .introContent {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .hello {
+        font-size: 1.1rem;
+    }
+    .introRole {
+        font-size: 1rem;
+    }
+    .introPara {
+        font-size: 1rem;
+    }
+    .bg {
+        height: 40vw;
+        max-height: 180px;
+        border-radius: 1rem;
+    }
+}

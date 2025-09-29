@@ -1,0 +1,117 @@
+#works {
+  padding: 7rem 2rem 4rem 2rem;
+  background: linear-gradient(120deg, #f7fafc 60%, #e0ece4 100%);
+  text-align: center;
+}
+
+.worksTitle {
+  font-size: 2.7rem;
+  margin-bottom: 1.2rem;
+  color: #22223b;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.worksDesc {
+  font-size: 1.18rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.worksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2.2rem;
+  padding: 0 1rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .worksGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .worksGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 1.2rem;
+  }
+}
+
+.projectCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 24px rgba(108,99,255,0.10);
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  min-height: 370px;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 12px 36px rgba(108,99,255,0.18);
+}
+
+.projectImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.07);
+}
+
+.projectContent {
+  padding: 1.3rem 1.1rem 1.2rem 1.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projectContent h3 {
+  margin: 0.5rem 0 0.3rem 0;
+  color: #22223b;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.projectContent p {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.githubBtn {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.55rem 1.2rem;
+  background: linear-gradient(90deg, #6c63ff 60%, #48b1f3 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.10);
+  transition: background 0.3s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+}
+
+.githubBtn:hover {
+  background: linear-gradient(90deg, #48b1f3 0%, #6c63ff 100%);
+  box-shadow: 0 4px 16px rgba(76, 110, 245, 0.18);
+}
