@@ -132,8 +132,8 @@ export const projectData = [
     {
         id: 5,
         img: Portfolio5,
+        video: P5Video,
         detailImg: "../../assets/p5-detail.jpg",
-         video: P5Video,
        
         title: "Face Mask Detection AI",
         shortDesc:
@@ -216,7 +216,7 @@ export const projectData = [
         </p>
     `,
     
-    github: "https://github.com/WasanaKarunasena/Indoor-Localization-Using-Wi-Fi-Research.git", 
+    github: "https://github.com/WasanaKarunasena/", // add your repo link here if available
 },
 
 ];
