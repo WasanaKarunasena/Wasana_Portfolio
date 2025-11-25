@@ -13,7 +13,7 @@ import P1Video from "../../assets/p1-demo.mp4";
 import P2Video from "../../assets/p2-demo.mp4";
 import P3Video from "../../assets/p3-demo.mp4";
 import P4Video from "../../assets/p4-demo.mp4";
-
+import P5Video from "../../assets/p5-demo.mp4";
 import P6Video from "../../assets/p6-demo.mp4";
 
 
@@ -133,6 +133,7 @@ export const projectData = [
         id: 5,
         img: Portfolio5,
         detailImg: "../../assets/p5-detail.jpg",
+         video: P5Video,
        
         title: "Face Mask Detection AI",
         shortDesc:
