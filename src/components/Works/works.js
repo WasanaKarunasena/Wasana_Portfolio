@@ -2,19 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./works.css";
 
-// Display images
+// Images
 import Portfolio1 from "../../assets/portfolio-1.png";
 import Portfolio2 from "../../assets/portfolio-2.png";
 import Portfolio3 from "../../assets/portfolio-3.png";
 import Portfolio4 from "../../assets/portfolio-4.png";
 import Portfolio5 from "../../assets/portfolio-5.png";
 import Portfolio6 from "../../assets/portfolio-6.png";
+
+// Videos
 import P1Video from "../../assets/p1-demo.mp4";
 import P2Video from "../../assets/p2-demo.mp4";
 import P3Video from "../../assets/p3-demo.mp4";
 import P4Video from "../../assets/p4-demo.mp4";
-import P5Video from "../../assets/p5-demo.mp4";
+import P5Video from "../../assets/p5-demo.mp4";   // ✔ correct path
 import P6Video from "../../assets/p6-demo.mp4";
+
 
 
 // Project data
