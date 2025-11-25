@@ -133,7 +133,7 @@ export const projectData = [
         id: 5,
         img: Portfolio5,
         detailImg: "../../assets/p5-detail.jpg",
-        video: P5Video,
+       
         title: "Face Mask Detection AI",
         shortDesc:
             "Real-time face mask detection using <strong>Python</strong> & <strong>OpenCV</strong>.",
