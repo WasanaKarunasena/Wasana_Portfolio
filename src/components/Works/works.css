@@ -115,3 +115,73 @@
   background: linear-gradient(90deg, #48b1f3 0%, #6c63ff 100%);
   box-shadow: 0 4px 16px rgba(76, 110, 245, 0.18);
 }
+/* ===== Project Buttons ===== */
+.viewProjectBtn,
+.githubBtn,
+.closeBtn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.viewProjectBtn {
+    background: #007bff;
+    color: white;
+}
+
+.githubBtn {
+    background: #24292e;
+    color: #fff;
+}
+
+.closeBtn {
+    background: #333;
+    color: white;
+}
+
+/* ===== Modal Overlay ===== */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+/* ===== Modal Box ===== */
+.modalContent {
+    background: white;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    animation: fadeIn 0.25s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modalImg {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
